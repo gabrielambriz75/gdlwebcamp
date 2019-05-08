@@ -913,6 +913,25 @@ div.resumen input {
 	text-align: center;
 	display: none;
 }
+/**		Calendario  **/
+div.calendario::after {
+	clear: both;
+	display: block;
+	content: '';
+}
+div.dia {
+	width: 50%;
+	float: left;
+	border: 2px #e1e1e1 solid;
+}
+@media only screen and (min-width: 768px) {
+	div.dia {
+		width: 33.3%;
+	}
+}
+div.dia:hover {
+	background-color: #e1e1e1;
+}
 
 /* ==========================================================================
    Helper classes
